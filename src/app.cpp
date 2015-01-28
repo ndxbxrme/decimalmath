@@ -23,7 +23,7 @@ Handle<Value> Sum(const Arguments& args) {
   std::cout << precision;
   if(args.Length() > 2) {
     if(args[2]->IsNumber()) {
-    precision = args[2]->ToNumber()->IntegerValue(); 
+      precision = args[2]->ToNumber()->IntegerValue(); 
     }
     else {
       ThrowException(Exception::TypeError(String::New("Precision must be a number")));
@@ -113,7 +113,7 @@ Handle<Value> Sub(const Arguments& args) {
   std::cout << precision;
   if(args.Length() > 2) {
     if(args[2]->IsNumber()) {
-    precision = args[2]->ToNumber()->IntegerValue(); 
+      precision = args[2]->ToNumber()->IntegerValue(); 
     }
     else {
       ThrowException(Exception::TypeError(String::New("Precision must be a number")));
@@ -203,7 +203,7 @@ Handle<Value> Mult(const Arguments& args) {
   std::cout << precision;
   if(args.Length() > 2) {
     if(args[2]->IsNumber()) {
-    precision = args[2]->ToNumber()->IntegerValue(); 
+      precision = args[2]->ToNumber()->IntegerValue(); 
     }
     else {
       ThrowException(Exception::TypeError(String::New("Precision must be a number")));
@@ -293,7 +293,7 @@ Handle<Value> Div(const Arguments& args) {
   std::cout << precision;
   if(args.Length() > 2) {
     if(args[2]->IsNumber()) {
-    precision = args[2]->ToNumber()->IntegerValue(); 
+      precision = args[2]->ToNumber()->IntegerValue(); 
     }
     else {
       ThrowException(Exception::TypeError(String::New("Precision must be a number")));
