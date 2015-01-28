@@ -4,7 +4,7 @@ decimal math for javascript
 `under development - use at your own risk`
 
 func( value1, value2, ?precision )  
-`precision defaults to 2`
+`precision defaults to 2, ,max 10`
 
 add, sub, multiply, divide  
 sum, minus
