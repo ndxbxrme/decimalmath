@@ -19,8 +19,8 @@ Handle<Value> Sum(const Arguments& args) {
     ThrowException(Exception::TypeError(String::New("Wrong argument type")));
     return scope.Close(Undefined());
   }
-  int precision = 3;
-  std::cout << precision;
+  int precision = 2;
+  
   if(args.Length() > 2) {
     if(args[2]->IsNumber()) {
       precision = args[2]->ToNumber()->IntegerValue(); 
@@ -109,8 +109,8 @@ Handle<Value> Sub(const Arguments& args) {
     ThrowException(Exception::TypeError(String::New("Wrong argument type")));
     return scope.Close(Undefined());
   }
-  int precision = 3;
-  std::cout << precision;
+  int precision = 2;
+  
   if(args.Length() > 2) {
     if(args[2]->IsNumber()) {
       precision = args[2]->ToNumber()->IntegerValue(); 
@@ -199,8 +199,8 @@ Handle<Value> Mult(const Arguments& args) {
     ThrowException(Exception::TypeError(String::New("Wrong argument type")));
     return scope.Close(Undefined());
   }
-  int precision = 3;
-  std::cout << precision;
+  int precision = 2;
+  
   if(args.Length() > 2) {
     if(args[2]->IsNumber()) {
       precision = args[2]->ToNumber()->IntegerValue(); 
@@ -289,8 +289,8 @@ Handle<Value> Div(const Arguments& args) {
     ThrowException(Exception::TypeError(String::New("Wrong argument type")));
     return scope.Close(Undefined());
   }
-  int precision = 3;
-  std::cout << precision;
+  int precision = 2;
+  
   if(args.Length() > 2) {
     if(args[2]->IsNumber()) {
       precision = args[2]->ToNumber()->IntegerValue(); 
