@@ -1,0 +1,31 @@
+{
+  "name": "decimalmath",
+  "version": "0.0.0",
+  "description": "decimal math for javascript",
+  "main": "test/app.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "node test/app.js",
+    "install": "node-gyp rebuild"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ndxbxrme/decimalmath.git"
+  },
+  "keywords": [
+    "decimal",
+    "math"
+  ],
+  "author": "ndxbxrme",
+  "license": "MIT",
+  "gypfile": true,
+  "bugs": {
+    "url": "https://github.com/ndxbxrme/decimalmath/issues"
+  },
+  "homepage": "https://github.com/ndxbxrme/decimalmath",
+  "devDependencies": {
+    "chance": "^0.7.3"
+  }
+}
