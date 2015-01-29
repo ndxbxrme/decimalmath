@@ -26,6 +26,7 @@
   },
   "homepage": "https://github.com/ndxbxrme/decimalmath",
   "devDependencies": {
-    "chance": "^0.7.3"
+    "chance": "^0.7.3",
+    "node-gyp": "^1.0.2"
   }
 }

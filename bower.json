@@ -1,0 +1,26 @@
+{
+  "name": "decimalmath",
+  "version": "0.0.0",
+  "homepage": "https://github.com/ndxbxrme/decimalmath",
+  "authors": [
+    "ndxbxrme <lewis_the_cat@hotmail.com>"
+  ],
+  "description": "decimal math for javascript",
+  "main": "build/decimalmath.js",
+  "keywords": [
+    "decimal",
+    "math"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "requirejs": "~2.1.15"
+  }
+}
