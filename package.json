@@ -1,6 +1,6 @@
 {
   "name": "decimalmath",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "decimal math for javascript",
   "main": "build/Release/decimalmath.node",
   "directories": {

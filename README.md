@@ -1,13 +1,12 @@
 # decimalmath
 
 decimal math for javascript  
-`under development - use at your own risk`
 
 ### installation
 for node  
 `npm install --save decimalmath`
-`var dec = require('decimalmath');`
-for web
+`var dec = require('decimalmath');`  
+for the web
 `bower install --save decimalmath`
 
 ### functions
