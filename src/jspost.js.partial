@@ -1,0 +1,10 @@
+  //public interface
+  return {
+    sum: Module.sum,
+    add: Module.sum,
+    sub: Module.sub,
+    minus: Module.sub,
+    multiply: Module.multiply,
+    divide: Module.divide
+  };
+};

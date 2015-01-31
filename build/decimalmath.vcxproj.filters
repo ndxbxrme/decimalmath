@@ -12,7 +12,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\src\app.cpp">
+    <ClCompile Include="..\src\decimal-node.cpp">
       <Filter>..\src</Filter>
     </ClCompile>
     <None Include="..\binding.gyp">
