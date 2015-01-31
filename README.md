@@ -4,10 +4,10 @@ decimal math for javascript
 
 ### installation
 for node  
-```npm install --save decimalmath
-var dec = require('decimalmath');```  
+`npm install --save decimalmath`  
+`var dec = require('decimalmath');`  
 for the web  
-`bower install --save decimalmath`
+`bower install --save decimalmath`  
 
 ### usage
 dec.sum( value1, value2, precision? )  
