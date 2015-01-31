@@ -1,6 +1,6 @@
 {
   "name": "decimalmath",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "decimal math for javascript",
   "main": "build/decimalmath.js",
   "directories": {
@@ -8,7 +8,7 @@
   },
   "scripts": {
     "test": "node test/app.js",
-    "install": "node-gyp rebuild"
+    "install": "node-gyp configure build"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,9 @@
   "keywords": [
     "decimal",
     "math"
+  ],
+  "ignore": [
+    "bower_components"
   ],
   "author": "ndxbxrme <admin@rainstormweb.com>",
   "license": "MIT",
