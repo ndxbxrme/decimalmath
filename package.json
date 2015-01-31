@@ -1,8 +1,8 @@
 {
   "name": "decimalmath",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "decimal math for javascript",
-  "main": "test/app.js",
+  "main": "build/decimalmath.js",
   "directories": {
     "test": "test"
   },
@@ -18,7 +18,7 @@
     "decimal",
     "math"
   ],
-  "author": "ndxbxrme",
+  "author": "ndxbxrme <admin@rainstormweb.com>",
   "license": "MIT",
   "gypfile": true,
   "bugs": {
