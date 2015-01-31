@@ -1,12 +1,12 @@
 {
   "name": "decimalmath",
-  "version": "0.1.9",
+  "version": "1.0.0",
   "homepage": "https://github.com/ndxbxrme/decimalmath",
   "authors": [
     "ndxbxrme <admin@rainsormweb.com>"
   ],
   "description": "decimal math for javascript",
-  "main": "build/decimalmath-web.js",
+  "main": "build/decimalmath-web.min.js",
   "keywords": [
     "decimal",
     "math"
