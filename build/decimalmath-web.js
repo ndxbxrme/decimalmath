@@ -15413,3 +15413,5 @@ run();
     divide: Module.divide
   };
 };
+var dec = Dec();
+
