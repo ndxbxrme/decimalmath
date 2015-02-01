@@ -18,21 +18,38 @@ Handle<Value> Sum(const Arguments& args) {
     ThrowException(Exception::TypeError(String::New("Wrong argument type")));
     return scope.Close(Undefined());
   }
-  int precision = 2;
+  int internalPrecision = 2;
+  int externalPrecision = 2;
   
   if(args.Length() > 2) {
     if(args[2]->IsNumber()) {
-      precision = args[2]->ToNumber()->IntegerValue(); 
+      internalPrecision = args[2]->ToNumber()->IntegerValue(); 
+      externalPrecision = internalPrecision;
     }
     else {
-      ThrowException(Exception::TypeError(String::New("Precision must be a number")));
+      if(args.Length() == 3) {
+        ThrowException(Exception::TypeError(String::New("Precision must be a number")));
+      }
+      else {
+        ThrowException(Exception::TypeError(String::New("Internal precision must be a number")));        
+      }
+      return scope.Close(Undefined());
+    }
+  }
+  
+  if(args.Length() > 3) {
+    if(args[3]->IsNumber()) {
+      externalPrecision = args[3]->ToNumber()->IntegerValue();
+    }
+    else {
+      ThrowException(Exception::TypeError(String::New("External precision must be a number")));
       return scope.Close(Undefined());
     }
   }
   double arg0 = args[0]->ToNumber()->Value();
   double arg1 = args[1]->ToNumber()->Value();
   
-  return scope.Close(Number::New(sum(arg0, arg1, precision)));
+  return scope.Close(Number::New(sum(arg0, arg1, internalPrecision, externalPrecision)));
 }
 Handle<Value> Sub(const Arguments& args) {
   HandleScope scope;
@@ -46,21 +63,38 @@ Handle<Value> Sub(const Arguments& args) {
     ThrowException(Exception::TypeError(String::New("Wrong argument type")));
     return scope.Close(Undefined());
   }
-  int precision = 2;
+  int internalPrecision = 2;
+  int externalPrecision = 2;
   
   if(args.Length() > 2) {
     if(args[2]->IsNumber()) {
-      precision = args[2]->ToNumber()->IntegerValue(); 
+      internalPrecision = args[2]->ToNumber()->IntegerValue(); 
+      externalPrecision = internalPrecision;
     }
     else {
-      ThrowException(Exception::TypeError(String::New("Precision must be a number")));
+      if(args.Length() == 3) {
+        ThrowException(Exception::TypeError(String::New("Precision must be a number")));
+      }
+      else {
+        ThrowException(Exception::TypeError(String::New("Internal precision must be a number")));        
+      }
+      return scope.Close(Undefined());
+    }
+  }
+  
+  if(args.Length() > 3) {
+    if(args[3]->IsNumber()) {
+      externalPrecision = args[3]->ToNumber()->IntegerValue();
+    }
+    else {
+      ThrowException(Exception::TypeError(String::New("External precision must be a number")));
       return scope.Close(Undefined());
     }
   }
   double arg0 = args[0]->ToNumber()->Value();
   double arg1 = args[1]->ToNumber()->Value();
   
-  return scope.Close(Number::New(sub(arg0, arg1, precision)));
+  return scope.Close(Number::New(sub(arg0, arg1, internalPrecision, externalPrecision)));
 }
 Handle<Value> Mult(const Arguments& args) {
   HandleScope scope;
@@ -74,21 +108,38 @@ Handle<Value> Mult(const Arguments& args) {
     ThrowException(Exception::TypeError(String::New("Wrong argument type")));
     return scope.Close(Undefined());
   }
-  int precision = 2;
+  int internalPrecision = 2;
+  int externalPrecision = 2;
   
   if(args.Length() > 2) {
     if(args[2]->IsNumber()) {
-      precision = args[2]->ToNumber()->IntegerValue(); 
+      internalPrecision = args[2]->ToNumber()->IntegerValue(); 
+      externalPrecision = internalPrecision;
     }
     else {
-      ThrowException(Exception::TypeError(String::New("Precision must be a number")));
+      if(args.Length() == 3) {
+        ThrowException(Exception::TypeError(String::New("Precision must be a number")));
+      }
+      else {
+        ThrowException(Exception::TypeError(String::New("Internal precision must be a number")));        
+      }
+      return scope.Close(Undefined());
+    }
+  }
+  
+  if(args.Length() > 3) {
+    if(args[3]->IsNumber()) {
+      externalPrecision = args[3]->ToNumber()->IntegerValue();
+    }
+    else {
+      ThrowException(Exception::TypeError(String::New("External precision must be a number")));
       return scope.Close(Undefined());
     }
   }
   double arg0 = args[0]->ToNumber()->Value();
   double arg1 = args[1]->ToNumber()->Value();
   
-  return scope.Close(Number::New(mult(arg0, arg1, precision)));
+  return scope.Close(Number::New(mult(arg0, arg1, internalPrecision, externalPrecision)));
 }
 Handle<Value> Div(const Arguments& args) {
   HandleScope scope;
@@ -102,21 +153,38 @@ Handle<Value> Div(const Arguments& args) {
     ThrowException(Exception::TypeError(String::New("Wrong argument type")));
     return scope.Close(Undefined());
   }
-  int precision = 2;
+  int internalPrecision = 2;
+  int externalPrecision = 2;
   
   if(args.Length() > 2) {
     if(args[2]->IsNumber()) {
-      precision = args[2]->ToNumber()->IntegerValue(); 
+      internalPrecision = args[2]->ToNumber()->IntegerValue(); 
+      externalPrecision = internalPrecision;
     }
     else {
-      ThrowException(Exception::TypeError(String::New("Precision must be a number")));
+      if(args.Length() == 3) {
+        ThrowException(Exception::TypeError(String::New("Precision must be a number")));
+      }
+      else {
+        ThrowException(Exception::TypeError(String::New("Internal precision must be a number")));        
+      }
+      return scope.Close(Undefined());
+    }
+  }
+  
+  if(args.Length() > 3) {
+    if(args[3]->IsNumber()) {
+      externalPrecision = args[3]->ToNumber()->IntegerValue();
+    }
+    else {
+      ThrowException(Exception::TypeError(String::New("External precision must be a number")));
       return scope.Close(Undefined());
     }
   }
   double arg0 = args[0]->ToNumber()->Value();
   double arg1 = args[1]->ToNumber()->Value();
   
-  return scope.Close(Number::New(div(arg0, arg1, precision)));
+  return scope.Close(Number::New(div(arg0, arg1, internalPrecision, externalPrecision)));
 }
 
 void init(Handle<Object> target) {
