@@ -20,7 +20,7 @@ dec.multiply( value1, value2, precision?, externalPrecision? )
 dec.divide( value1, value2, precision?, externalPrecision? )  
 `precision defaults to 2, max 10`
 
-###eg
+### eg  
 dec.sum(18.95, 14.28) = 33.23  
 dec.sum(13.2525, 14.0837, 4) = 27.3362  
 dec.sum(10.2464, 17.8059, 4, 2) = 28.05  
