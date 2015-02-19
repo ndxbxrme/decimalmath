@@ -192,7 +192,13 @@ void init(Handle<Object> target) {
   target->Set(String::NewSymbol("sum"),
       FunctionTemplate::New(Sum)->GetFunction());
   
+  target->Set(String::NewSymbol("add"),
+      FunctionTemplate::New(Sum)->GetFunction());
+  
   target->Set(String::NewSymbol("sub"),
+      FunctionTemplate::New(Sub)->GetFunction());
+  
+  target->Set(String::NewSymbol("minus"),
       FunctionTemplate::New(Sub)->GetFunction());
   
   target->Set(String::NewSymbol("multiply"),
