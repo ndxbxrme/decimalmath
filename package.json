@@ -22,7 +22,6 @@
   ],
   "author": "ndxbxrme <admin@rainstormweb.com>",
   "license": "MIT",
-  "gypfile": true,
   "bugs": {
     "url": "https://github.com/ndxbxrme/decimalmath/issues"
   },
