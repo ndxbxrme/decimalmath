@@ -1,4 +1,4 @@
-#include "../external/decimal_for_cpp/include/decimal.h"
+#include "../external/decimal.h"
 
 using namespace dec;
 
