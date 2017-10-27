@@ -6,7 +6,7 @@
     "ndxbxrme <admin@rainsormweb.com>"
   ],
   "description": "decimal math for javascript",
-  "main": "build/decimalmath-web.min.js",
+  "main": "build/decimalmath-web.js",
   "keywords": [
     "decimal",
     "math"
