@@ -3,7 +3,7 @@
   "version": "1.4.0",
   "homepage": "https://github.com/ndxbxrme/decimalmath",
   "authors": [
-    "ndxbxrme <admin@rainsormweb.com>"
+    "ndxbxrme <admin@rainstormweb.com>"
   ],
   "description": "decimal math for javascript",
   "main": "build/decimalmath-web.js",
@@ -17,8 +17,5 @@
     "**/.*",
     "node_modules",
     "bower_components"
-  ],
-  "devDependencies": {
-    "requirejs": "~2.1.15"
-  }
+  ]
 }

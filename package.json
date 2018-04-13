@@ -1,14 +1,13 @@
 {
   "name": "decimalmath",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "description": "decimal math for javascript",
-  "main": "build/Release/decimalmath.node",
+  "main": "build/decimalmath.js",
   "directories": {
     "test": "test"
   },
   "scripts": {
-    "test": "node test/app.js",
-    "install": "node-gyp rebuild"
+    "test": "node test/app.js"
   },
   "repository": {
     "type": "git",
@@ -23,13 +22,11 @@
   ],
   "author": "ndxbxrme <admin@rainstormweb.com>",
   "license": "MIT",
-  "gypfile": true,
   "bugs": {
     "url": "https://github.com/ndxbxrme/decimalmath/issues"
   },
   "homepage": "https://github.com/ndxbxrme/decimalmath",
   "devDependencies": {
-    "chance": "^0.7.3",
-    "node-gyp": "^1.0.2"
+    "chance": "^0.7.3"
   }
 }
