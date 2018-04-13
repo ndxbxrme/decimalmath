@@ -1,13 +1,14 @@
 {
   "name": "decimalmath",
-  "version": "1.5.0",
+  "version": "1.5.1",
   "description": "decimal math for javascript",
   "main": "build/decimalmath.js",
   "directories": {
     "test": "test"
   },
   "scripts": {
-    "test": "node test/app.js"
+    "test": "node test/app.js",
+    "install": ""
   },
   "repository": {
     "type": "git",
